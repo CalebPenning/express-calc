@@ -67,5 +67,22 @@ function getMedian(nums) {
     // sort and get middle element
 
     nums.sort((a, b) => a - b)
-    
+
+    let middleIdx = Math.floor(nums.length / 2);
+    let median
+
+    if (nums.length % 2 === 0) {
+        median = (nums[middleIdx] + nums[middleIdx - 1]) / 2
+    } else {
+        median = nums[middleIndex]
+    }
+    return median
+}
+
+module.exports = {
+    createCounter,
+    getMean,
+    getMedian,
+    getMode,
+    convertNumsArray
 }
