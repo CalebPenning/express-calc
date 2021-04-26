@@ -74,7 +74,7 @@ function getMedian(nums) {
     if (nums.length % 2 === 0) {
         median = (nums[middleIdx] + nums[middleIdx - 1]) / 2
     } else {
-        median = nums[middleIndex]
+        median = nums[middleIdx]
     }
     return median
 }
